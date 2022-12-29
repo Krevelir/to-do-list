@@ -1,15 +1,8 @@
 {
     const tasks = [
-        {
-            content: "complete a JS course module",
-            done: false,
-        },
-        {
-            content: "put some clothes on",
-            done: true,
-        },
+   
     ]
-    
+
     const addNewTask = (newTaskContent) => {
         tasks.push({
             content: newTaskContent,
@@ -22,14 +15,15 @@
         tasks.splice(taskIndex, 1);
         render();
     };
-   
+
     const toggleTaskDone = (taskIndex) => {
-        tasks[taskIndex].done =  !tasks[taskIndex].done;
-        render ();
+        tasks[taskIndex].done = !tasks[taskIndex].done;
+        render();
     }
 
     const bindEvents = () => {
-        document.querySelector(".js-tasks").innerHTML = htmlString;
+
+
 
         const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -46,7 +40,7 @@
                 toggleTaskDone(index);
             });
         })
-    } 
+    }
 
     const render = () => {
         let htmlString = ""
@@ -58,9 +52,10 @@
             <button class="js-remove">remove</button>
             </li>
             `;
+            document.querySelector(".js-tasks").innerHTML = htmlString;
 
             bindEvents();
-        };  
+        };
     }
 
     const onFormSubmit = (event) => {
@@ -77,10 +72,7 @@
 
 
     const init = () => {
-        render();
-
         const form = document.querySelector(".js-form");
-
         form.addEventListener("submit", onFormSubmit)
     };
 
