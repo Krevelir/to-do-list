@@ -49,6 +49,7 @@
     background-color: crimson;
     color: white;
     justify-self: right;
+    margin-left: 3px;
 }
 
 .list__button--remove:hover {
