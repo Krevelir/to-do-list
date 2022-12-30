@@ -1,12 +1,12 @@
 {
     const tasks = [
         {
-            content: "test",
+            content: "task1",
             done: false,
         },
         {
-            content: "test",
-            done: true,
+            content: "task2",
+            done: false,
         },
     ];
 
@@ -53,9 +53,9 @@
             htmlString += `
                 <li class= "list">
                   <button class= "list__button list__button--done js-done">
-                  ${task.done ? "✔" : ""}
+                  ${task.done ? "✔" : "-"}
                   </button>
-                  <span class="list__taskName${task.done ? " list__taskName--done" : ""}">
+                  <span class="list__item${task.done ? " list__taskDone" : ""}">
                   ${task.content}
                   </span>
                   <button class="list__button list__button--remove js-remove">
@@ -69,6 +69,7 @@
 
         bindEvents();
     };
+    
 
     const onFormSubmit = (event) => {
         event.preventDefault();
