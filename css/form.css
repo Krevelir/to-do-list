@@ -2,7 +2,6 @@
     display: flex;
     padding: 20px;
     background-color: white;
-    margin-bottom: 2px;
 }
 
 .form__input {
@@ -14,12 +13,12 @@
 }
 
 .form__button {
-    padding: 10px;
     background-color: rgb(3, 133, 133);
     color: white;
-    border: none;
+    padding: 10px;
     flex-basis: 20%;
     max-width: 150px;
+    border: none;
 }
 
 .form__button:hover {

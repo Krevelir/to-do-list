@@ -1,42 +1,40 @@
 .list {
     list-style: none;
     margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display: grid;
     grid-template-columns: 1fr 6fr 1fr;
-    padding-bottom: 5px;
     justify-items: center;
-    padding-top: 5px;
     word-break: break-word;
 }
+
 .list__item {
     border-bottom: rgb(204, 194, 194) 1px solid;
+    justify-self: left;
     width: 100%;
-    justify-self:left;
     font-size: 120%;
     font-weight: 700;
-    
 }
 
 .list__taskDone {
-    text-decoration:line-through;
+    text-decoration: line-through;
 }
 
 .list__container {
     background-color: white;
-    margin-bottom: 5px;
-    padding: 20px;
-    margin-top: 1px;
     box-shadow: 0 5px 5px #aaa;
+    margin-top: 1px;
+    padding: 20px;
 }
 
 .list__button {
-    width:28px;
-    height:max-content;
+    width: 28px;
 }
 
 .list__button--done {
     background-color: green;
-    color:white;
+    color: white;
 }
 
 .list__button--done:hover {
@@ -51,4 +49,3 @@
 .list__button--remove:hover {
     background-color: red;
 }
-
