@@ -4,17 +4,17 @@
     padding-top: 5px;
     padding-bottom: 5px;
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
-    justify-items: center;
+    grid-template-columns: 1fr 15fr 1fr;
     word-break: break-word;
+    border-bottom: 1px #ddd solid;
 }
 
 .list__item {
-    border-bottom: rgb(204, 194, 194) 1px solid;
     justify-self: left;
+    align-self: center;
     width: 100%;
     font-size: 120%;
-    font-weight: 700;
+    margin: 0px 5px;
 }
 
 .list__taskDone {
@@ -25,16 +25,20 @@
     background-color: white;
     box-shadow: 0 5px 5px #aaa;
     margin-top: 1px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .list__button {
+    height: 28px;
     width: 28px;
+    align-self: center;
+    border: none;
 }
 
 .list__button--done {
     background-color: green;
     color: white;
+    justify-self: left;
 }
 
 .list__button--done:hover {
@@ -44,6 +48,7 @@
 .list__button--remove {
     background-color: crimson;
     color: white;
+    justify-self: right;
 }
 
 .list__button--remove:hover {
