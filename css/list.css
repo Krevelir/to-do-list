@@ -1,31 +1,27 @@
 .list {
     list-style: none;
     margin-bottom: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     display: grid;
     grid-template-columns: 1fr 15fr 1fr;
     word-break: break-word;
     border-bottom: 1px #ddd solid;
-}
-
-.list__item {
-    justify-self: left;
-    align-self: center;
-    width: 100%;
-    font-size: 120%;
-    margin: 0px 5px;
+    align-items: baseline;
 }
 
 .list__taskDone {
     text-decoration: line-through;
 }
 
+.list__task {
+    align-self: center;
+}
+
 .list__container {
     background-color: white;
     box-shadow: 0 5px 5px #aaa;
     margin-top: 1px;
-    padding: 15px;
+    padding: 30px 15px 10px;
 }
 
 .list__button {
@@ -39,6 +35,8 @@
     background-color: green;
     color: white;
     justify-self: left;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .list__button--done:hover {
@@ -50,6 +48,7 @@
     color: white;
     justify-self: right;
     margin-left: 3px;
+    margin-right: 5px;
 }
 
 .list__button--remove:hover {
