@@ -3,7 +3,7 @@
     margin-bottom: 10px;
     padding-bottom: 10px;
     display: grid;
-    grid-template-columns: 1fr 15fr 1fr;
+    grid-template-columns: auto 1fr auto;
     word-break: break-word;
     border-bottom: 1px #ddd solid;
     align-items: baseline;
@@ -29,6 +29,7 @@
     width: 28px;
     align-self: center;
     border: none;
+    text-align: center;
 }
 
 .list__button--done {

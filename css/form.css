@@ -6,7 +6,7 @@
 
 .form__input {
     border: 1px solid lightgrey;
-    flex-basis: 84%;
+    flex-basis: 80%;
     margin-right: 15px;
     padding: 5px;
     font-size: 110%;
@@ -16,7 +16,7 @@
     background-color: rgb(3, 133, 133);
     color: aliceblue;
     padding: 5px;
-    flex-basis: 16%;
+    flex-basis: 20%;
     min-width: 110px;
     max-width: 150px;
     border: none;
@@ -37,7 +37,7 @@
 
     .form__button {
         min-width: fit-content;
-        margin-top: 5px;
+        margin-top: 10px;
         max-width: 100%;
     }
 }
