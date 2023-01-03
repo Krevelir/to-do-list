@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta property="og:image" content="images/metaimage.png">
     <title>To-do list</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@100;500&display=swap"
+        rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/form.css" rel="stylesheet">
     <link href="css/list.css" rel="stylesheet">
@@ -19,14 +20,18 @@
 
 <body class="body">
     <h1>Lista zadań</h1>
-    <h2 class="header">Dodaj nowe zadanie</h2>
-    <form class="js-form">
-        <section class="form__container">
-            <input class="js-newTask form__input" placeholder="Co jest do zrobienia?" autofocus>
-            <button class="form__button js-button ">Dodaj zadanie</button>
-        </section>
-    </form>
+    <section>
+        <h2 class="header">Dodaj nowe zadanie</h2>
+        <form class="js-form form">
+            <div class="form__container">
+                <input class="js-newTask form__input" placeholder="Co jest do zrobienia?" autofocus>
+                <button class="form__button js-button ">Dodaj zadanie</button>
+            </div>
+        </form>      
+    </section>
     <h2 class="header">Lista zadań</h2>
     <ul class="js-tasks list__container"></ul>
+    </section>
 </body>
+
 </html>
