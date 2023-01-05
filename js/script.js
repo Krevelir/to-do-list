@@ -1,6 +1,6 @@
 {
     let tasks = [];
-    
+
     const addNewTask = (newTaskContent) => {
         tasks = [
             ...tasks,
