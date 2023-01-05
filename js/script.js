@@ -1,16 +1,18 @@
 {
-    const tasks = [];
-
+    let tasks = [];
+    
     const addNewTask = (newTaskContent) => {
-        tasks.push({
-            content: newTaskContent,
-        });
-
+        tasks = [
+            ...tasks,
+            { content: newTaskContent },
+        ]
         render();
     };
 
     const removeTask = (taskIndex) => {
-        tasks.splice(taskIndex, 1);
+        [
+            ...tasks.splice(taskIndex, 1),
+        ];
         render();
     };
 
@@ -43,15 +45,15 @@
         for (const task of tasks) {
             htmlString += `
             <li class= "list">
-                <button class= "list__button list__button--done js-done">
-                    ${task.done ? "✔" : ""}
-                </button>
-                <span class="list__task${task.done ? " list__taskDone" : ""}">
-                    ${task.content}
-                </span>
-                <button class= "list__button list__button--remove js-remove">
+            <button class= "list__button list__button--done js-done">
+                ${task.done ? "✔" : ""}
+            </button>
+            <span class="list__task${task.done ? " list__taskDone" : ""}">
+                ${task.content}
+            </span>
+            <button class= "list__button list__button--remove js-remove">
                 🗑
-                </button>
+            </button>
           </li>
              `;
         };

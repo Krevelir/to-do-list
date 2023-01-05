@@ -57,3 +57,40 @@
 .list__button--remove:hover {
     background-color: red;
 }
+
+.list__header {
+    background-color: white;
+    margin-top: 10px;
+    margin-bottom: 1px;
+    padding: 5px 20px;
+    box-shadow: 0 0 5px #aaa;
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    gap: 10px;
+}
+
+.list__buttonAllDone {
+    border: none;
+    background: none;
+    color: rgb(3, 133, 133);
+}
+
+.list__buttonAllDone:hover {
+    color: rgb(7, 173, 173);
+}
+
+.list__buttonAllRemove {
+    border: none;
+    background: none;
+    color: rgb(3, 133, 133);
+}
+
+.list__buttonAllRemove:hover {
+    color: rgb(7, 173, 173);
+}
+
+@media (max-width: 767px) {
+    .list__header {
+        grid-template-columns: none;
+    }
+}
