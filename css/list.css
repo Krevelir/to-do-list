@@ -38,6 +38,7 @@
     justify-self: left;
     margin-left: 5px;
     margin-right: 5px;
+    transition: 1s;
 }
 
 .list__button--done:hover {
@@ -45,11 +46,12 @@
 }
 
 .list__button--remove {
-    background-color: crimson;
+    background-color: hsl(0, 60%, 50%);
     color: white;
     justify-self: right;
     margin-left: 3px;
     margin-right: 5px;
+    transition: 1s;
 }
 
 .list__button--remove:hover {

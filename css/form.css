@@ -20,10 +20,12 @@
     min-width: 110px;
     max-width: 150px;
     border: none;
+    transition: 1s;
 }
 
 .form__button:hover {
     background-color: rgb(7, 173, 173);
+    transform: scale(103%)
 }
 
 @media (max-width: 767px) {
