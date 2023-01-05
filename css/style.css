@@ -16,9 +16,7 @@ html {
 
 .header {
     background-color: white;
-    margin-top: 10px;
     margin-bottom: 1px;
     padding: 20px;
     box-shadow: 0 0 5px #aaa;
-    font-weight: 800;
 }
