@@ -20,20 +20,19 @@
 
 <body class="body">
     <h1>Lista zadań</h1>
-    <section>
+    <section class>
         <h2 class="header">Dodaj nowe zadanie</h2>
-        <form class="js-form form">
+        <form class="form js-form">
             <div class="form__container">
-                <input class="js-newTask form__input" placeholder="Co jest do zrobienia?" autofocus>
+                <input class="form__input js-newTask" placeholder="Co jest do zrobienia?" autofocus>
                 <button class="form__button js-button">Dodaj zadanie</button>
             </div>
         </form>
     </section>
     <section>
-        <div class ="list__header">
-        <h2>Lista zadań</h2>
-        <button class="list__buttonAllDone">Ukryj zadania</button>
-        <button class="list__buttonAllRemove">Usuń zadania</button>
+        <div class="list__header">
+            <h2>Lista zadań</h2>
+            <div class="list__buttons_container js-tasksButtons"></div>
         </div>
         <ul class="js-tasks list__container"></ul>
     </section>
